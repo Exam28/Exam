@@ -1,0 +1,75 @@
+Plotting of complex numbers ratation of complex number 90, 180, 270 degree
+about
+
+import matplotlib.pyplot as plt
+
+# Input first complex number
+complex_input = complex(input("Enter the first complex number: "))
+print("The given complex number is:", complex_input)
+
+# Extract real and imaginary parts
+x = complex_input.real
+y = complex_input.imag
+
+# Prepare data for plotting
+data1 = complex_input
+data2 = 1 + 2j  # Example second complex number
+data3 = 3 + 4j  # Example third complex number
+
+# Plot the complex numbers
+plt.plot(x, y, 'ro', label='First Complex Number')  # Plot the first number in red
+plt.plot(data2.real, data2.imag, 'g*', label='Second Complex Number')  # Green star for the second number
+plt.plot(data3.real, data3.imag, 'b*', label='Third Complex Number')  # Blue star for the third number
+
+# Add labels and grid
+plt.xlabel("Real")
+plt.ylabel("Imaginary")
+plt.grid()
+plt.legend()
+plt.title("Plot of Complex Numbers")
+plt.axis('equal')  # Equal scaling for both axes
+plt.show()
+
+
+
+creating a new
+given number
+Rotating the the giver and also be
+by Rotati 270
+degno 90, 180, 270 number a = 1/2
+= 1/2 a = 1/3
+by
+a=2
+
+import matplotlib.pyplot as plt
+
+# Input first complex number
+z = complex(input("Enter the first complex number: "))
+k = int(input("Enter a constant: "))
+print("The given complex number is:", z)
+print("The constant is:", k)
+
+# Calculate new complex number
+n = 2 * k
+print("The new complex is:", n)
+
+# Extract real and imaginary parts
+x = z.real
+y = z.imag
+
+# Prepare data for plotting
+w = n.real
+f = n.imag
+
+# Plotting
+plt.plot(x, y, 'ro', label='Original Complex Number')  # Plot original complex number in red
+plt.plot(w, f, 'b*', label='New Complex Number')  # Plot new complex number in blue
+
+# Set labels and grid
+plt.xlabel("Real")
+plt.ylabel("Imaginary")
+plt.grid()
+plt.legend()
+plt.title("Plot of Complex Numbers")
+plt.axis('equal')  # Equal scaling for both axes
+plt.show()
